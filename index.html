@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Adrian Sanchez | Portfolio</title>
+        <link rel="stylesheet" href="./styles.css"/>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script>
+            function reveal() {
+                let reveals = document.querySelectorAll(".reveal");
+
+                for (let i = 0; i < reveals.length; i++) {
+                    let windowHeight = window.innerHeight;
+                    let elementTop = reveals[i].getBoundingClientRect().top;
+                    let elementVisible = 50;
+
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add("active");
+                    }
+                }
+            }
+            window.addEventListener("scroll", reveal);
+        </script>
+    </head>
+
+    <body>
+
+        <!-- Header -->
+
+        <header>
+            <a href="#about"><h3>About me</h3></a>
+            <a href="#projects"><h3>Projects</h3></a>
+            <a href="#contact"><h3>Contact</h3></a>
+        </header>
+
+        <!-- Hero -->
+
+        <div id="about-me-container">
+            <div>
+                <h1>HEY, I'M ADRIAN</h1>
+                <h2>Full-Stack Software Engineer & business professional with 7+ years of experience</h2>
+            </div>
+            <img id="photo" src="resources/images/headshot.jpg" alt="Adrian Sanchez">
+        </div>
+
+        <a href="#about"><p id="arrow"><i class="arrow down"></i></p></a>
+
+        <!-- About me -->
+
+        <div class="section" id="about">
+            <h1 class="subtitle">ABOUT ME</h1>
+            <p>I'm a software engineer and business professional with a deep passion for technology and engineering. I thrive on building, creating, and innovating, and I'm particularly motivated by how these efforts can contribute to business growth.<br><br>My approach is analytical and detail-oriented, and I excel at focusing on the task at hand. I'm a strong team player, but I value independent work and the freedom to tackle challenges on my own.<br><br>When I'm not coding, you can find me curled up with a good book, cheering on my favorite football team, or bringing the life of the party with some magic tricks... Just don't ask to reveal my secrets! 😉</p>
+            <h2>Education</h2>
+            <h5>BsC Business Administration | Lisandro Alvarado Midwest University</h5>
+            <h4>Harvard University Professional Certificates</h4>
+            <ul>
+                <li>Computer Science for Web Programming.</li>
+                <li>Computer Science for Python Programming.</li>
+                <li>Computer Science for Artificial Intelligence.</li>
+            </ul>
+            <h4>Codecademy Professional Certifications</h4>
+            <ul>
+                <li>Front-End Engineering.</li>
+                <li>Back-End Engineering.</li>
+                <li>Full-Stack Engineering.</li>
+                <li>iOS Development.</li>
+                <li>Machine Learning/AI Engineering.</li>
+            </ul>
+            <h3 id="skills-subheading">SKILLS</h3>
+            <div id="skills">
+                <p>Python</p>
+                <p>Git/GitHub</p>
+                <p>Django</p>
+                <p>PostgreSQL</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>React</p>
+            </div>
+            <table id="skill-list">
+                <tr>
+                    <td>Python</td>
+                    <td>Git/GitHub</td>
+                </tr>
+                <tr>
+                    <td>Django</td>
+                    <td>PostgreSQL</td>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>CSS</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>React</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Projects -->
+
+        <div class="section" id="projects">
+            <h1 class="subtitle">PROJECTS</h1>
+            <div class="project-container reveal fade-right">
+                <div class="project-description">
+                    <a target="_blank" href="http://www.monarchaconsulting.com"><h1 class="project-title">Monarcha Consulting <img width="32" height="32" src="https://img.icons8.com/material-outlined/24/external-link.png" alt="external-link"/></h1></a>
+                    <p>Responsive website of a ficticious digital marketing agency with admin console and basic CRM.<br><i>Technologies: Python, Django, HTML, CSS, JavaScript</i></p>
+                    <a href="monarcha.html"><button class="button">See more</button></a>
+                </div>
+                <div class="project-photo">
+                    <img src="resources/images/monarcha.png" alt="monarcha consulting" height="300px">
+                </div>
+            </div>
+
+            <div class="project-container2 reveal fade-left">
+                <div class="project-description2-mobile">
+                    <a target="_blank" href="http://www.construcubo.com"><h1>ConstruCubo <img width="32" height="32" src="https://img.icons8.com/material-outlined/24/external-link.png" alt="external-link"/></h1></a>
+                    <p>Responsive website of a construction and real estate development firm based in Colombia.<br><i>Technologies: JavaScript, React, Redux, HTML, CSS</i></p>
+                    <a href="construcubo.html"><button class="button">See more</button></a>
+                </div>
+
+                <div class="project-photo">
+                    <img class="photo-right" src="resources/images/construcubo2.png" alt="construcubo" height="300px">
+                </div>
+                <div class="project-description2">
+                    <a target="_blank" href="http://www.construcubo.com"><h1>ConstruCubo <img width="32" height="32" src="https://img.icons8.com/material-outlined/24/external-link.png" alt="external-link"/></h1></a>
+                    <p>Responsive website of a construction and real estate development firm based in Colombia.<br><i>Technologies: JavaScript, React, Redux, HTML, CSS</i></p>
+                    <a href="construcubo.html"><button class="button">See more</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+
+        <div class="section contact" id="contact">
+            <h1 class="subtitle">CONTACT</h1>
+            <p>Have an interesting project? I would love to hear about it!</p>
+            <div id="contact-icons">
+                <a target="_blank" href="https://www.linkedin.com/in/adrian-sanchez-3b99ba21b/"><img src="resources/images/linkedin.png" alt="LinkedIn" height="32"></a>
+                <a target="_blank" href="mailto:adrscast@gmail.com"><img src="resources/images/email.png" alt="Email" height="32"></a>
+                <a target="_blank" href="https://github.com/adriansq"><img src="resources/images/github.png"/ alt="GitHub" height="32"></a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <footer>
+            <a href="index.html"><h3>About me</h3></a>
+            <a href="index.html#projects"><h3>Projects</h3></a>
+            <a href="#contact"><h3>Contact</h3></a>
+        </footer>
+        <h3 id="last">Made in 2024 by Adrian Sanchez</h3>
+
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
